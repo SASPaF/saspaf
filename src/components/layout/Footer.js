@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import '../styles/Footer.css'
+import {Link} from 'react-router-dom'
 
 export class Footer extends Component {
     render() {
@@ -24,12 +26,11 @@ export class Footer extends Component {
               {/*div containing links to above pages*/}
               <div className="mid-col">
                 <ul id="footer-links">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="#info">About Us</a></li>
-                  <li><a href="#volunteer">Join Us</a></li>
-                  <li><a href="#donate">Donate</a></li>
-                  <li><a href="#footer">Contact</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><Link to = "/">Home</Link></li>
+                  <li><Link to = "/">Our Services</Link></li>
+                  <li><Link to = "/get-involved">Get Involved</Link></li>
+                  <li><Link to = "/">Contact</Link></li>
+                  <li><Link to = "/">Blog</Link></li>
                 </ul>
                 <ul id="footer-details">
                   <li><a href="#">Privacy Policy</a></li>

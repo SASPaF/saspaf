@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './styles/Impact.css'
 
 export class Impact extends Component {
     render() {

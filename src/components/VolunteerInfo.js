@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import './styles/VolunteerInfo.css'
 
 export class VolunteerInfo extends Component {
     render() {
         return (
-            <div id="get-involved" style = {getStyle()}>  
+            <div id="get-involved">  
               <div id="join-text">
                 <h1>Get Involved</h1>
                 <br />

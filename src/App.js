@@ -1,38 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
+import React, {Component} from 'react';
+import{ BrowserRouter as Router, Route } from 'react-router-dom';
+import AppBar from './components/layout/AppBar'
+import Footer from './components/layout/Footer'
+import Intro from './components/Intro'
+import Mission from './components/Mission'
+import Donate from './components/Donate'
+import Impact from './components/Impact'
+import VolunteerInfo from './components/VolunteerInfo'
+import './App.css'
 
-class App extends React.Component {
-   render() {
-      return (
-         <div>
-            <ul>
-            <li>Home</li>
-            <li>GetInvolved</li>
-            </ul>
-            {this.props.children}
-         </div>
-      )
-   }
+class App extends Component{
+  render(){
+    return(
+      <Router>
+        <div className = "App">
+          <div className = "container">
+            <AppBar />
+            <Route exact path = "/" render = {props => (
+              <React.Fragment>
+                <Intro />
+                <Mission />
+                <Impact />
+                <Donate />
+              </React.Fragment>
+            )} />
+            <Route path = "/get-involved" render = {props =>(
+              <React.Fragment>
+                <VolunteerInfo />
+                <Donate />
+              </React.Fragment>
+            )} />
+            <Footer />
+          </div>
+        </div>
+      </Router>
+    )
+  }
 }
 
-class Home extends React.Component {
-   render() {
-      return (
-         <div>
-            <h1>Home</h1>
-         </div>
-      )
-   }
-}
-export default {App, Home};
 
-ReactDOM.render((
-  <Router history = {browserHistory}>
-     <Route path = "/" component = {App}>
-        <IndexRoute component = {Home} />
-        <Route path = "Home" component = {Home} />
-        <Route path = "Get Involved" component = {GetInvolved} />
-     </Route>
-  </Router>
-), document.getElementById('app'))
+export default App;

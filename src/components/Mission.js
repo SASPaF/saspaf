@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './styles/Mission.css'
 
 export class Mission extends Component {
     render() {

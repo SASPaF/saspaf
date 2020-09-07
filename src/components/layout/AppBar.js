@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import '../styles/AppBar.css'
+import {Link} from 'react-router-dom'
+import logo from '../../assets/logo.png'
 
 export class AppBar extends Component {
     render() {
@@ -7,18 +10,18 @@ export class AppBar extends Component {
                 <div id="nav-container">
                     <div className="left">
                         <div className="nav-link" id="nav-logo">
-                            <img src = {require('./logo.png)} style ={{height: 80px}}/>
+                            <img src={logo} style={{height: '80px'}}/>
                         </div>
                     </div>
                     <div className="right">
                         <div className="nav-link">
-                            <a href = "#" className="left-animate">Home</a>
+                            <Link className = "left-animate" to = "/">Home</Link>
                         </div>
                         <div className="nav-link">
                             <a href="#" className="left-animate">Our Services</a>
                         </div>
                         <div className="nav-link">
-                            <a href="#" className="left-animate">Get Involved</a>
+                            <Link className = "left-animate" to = "/get-involved">Get Involved</Link>
                         </div>
                         <div className="nav-link">
                             <a href="#" className="left-animate">Contact</a>
