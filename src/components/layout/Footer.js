@@ -52,7 +52,7 @@ export class Footer extends Component {
             </div>
             <div id="rights-text">
               © 2020 Support and Assistance for Single Parent Families | Designed
-              and developed by Kevin Lan, Tony Xin, &amp; Caleb Kim
+              and developed with ❤️ by the SASPAF Development Team
             </div>
           </div>
         )

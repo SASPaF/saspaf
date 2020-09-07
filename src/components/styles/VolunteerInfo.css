@@ -1,15 +1,10 @@
-#img-div{
-    text-align: center;
-    margin-top: 8vh;
-    height: 15vh;
-    width: 100%;
-}
 #get-involved{
     display: flex;
     align-items: center;
     height: 135vh;
     background-color:rgb(221, 243, 214);
     flex-direction: column;
+    margin-top: 7vh;
 }
 #join-text{
     margin-top: 3vh;
