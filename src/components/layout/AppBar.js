@@ -7,7 +7,7 @@ export class AppBar extends Component {
                 <div id="nav-container">
                     <div className="left">
                         <div className="nav-link" id="nav-logo">
-                            <img src="require('@/assets/logo.png')" height="80px" />
+                            <img src = {require('./logo.png)} style ={{height: 80px}}/>
                         </div>
                     </div>
                     <div className="right">

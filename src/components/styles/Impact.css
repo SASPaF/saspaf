@@ -1,0 +1,39 @@
+#impact {
+    display: flex;
+    justify-content: center;
+    height: 65vh;
+    background-color: var(--secondary-section-color);
+  }
+  #impact-content {
+    margin-top: 5vh;
+    flex-direction: column;
+  }
+  #impact-text {
+    text-align: center;
+    width: 45vw;
+  }
+  #impact-text p {
+    font-size: 1.5rem;
+  }
+  #stats {
+    display: flex;
+    justify-content: center;
+    width: 45vw;
+  }
+  #stats-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat:not(:last-child) {
+    margin-right: 5vw;
+    font-size: 1rem;
+  }
+  .stat i {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+  }

@@ -1,0 +1,31 @@
+#donate {
+    display: flex;
+    justify-content: center;
+    background-color: var(--third-color);
+    height: 30vh;
+    width: 100%;
+  }
+  #donate-content {
+    text-align: center;
+    margin-top: 3vh;
+    width: 45vw;
+  }
+  #donate-content h1 {
+    font-size: 2rem;
+    font-weight: 1000;
+  }
+  #donate-content p {
+    font-size: 1.2rem;
+  }
+  #donate-btn {
+    margin-top: 1vh;
+    height: 4.5vh;
+    width: 8vw;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background: var(--secondary-bg-color);
+    box-shadow: 0 0 20px #14e67d;
+    font-size: 1rem;
+    font-weight: 1000;
+  }
