@@ -1,5 +1,5 @@
-### SASPAF Website - Built w/React + MaterialUI
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### SASPAF Website
+Built w/React and MaterialUI.
 
 ## Available Scripts
 
