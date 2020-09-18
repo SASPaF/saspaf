@@ -1,5 +1,5 @@
 ### SASPAF Website
-Built with React + MaterialUI.
+Built with React & MaterialUI.
 
 ## Available Scripts
 
