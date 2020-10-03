@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../misc/Headings.js";
 
-const Container = tw.div`relative`;
+const Container = tw.div`relative bg-primary-200 text-gray-700 -mx-8 px-8`;
 
 const SingleColumn = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
@@ -29,7 +29,7 @@ const Link = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-po
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
-)`absolute top-0 left-0 transform -translate-x-20 rotate-90 translate-y-8 -z-10 opacity-25 text-primary-500 fill-current w-24`;
+)`absolute top-0 left-0 transform -translate-x-20 rotate-90 translate-y-8 -z-10 opacity-25 text-primary-800 fill-current w-24`;
 const SvgDotPattern2 = tw(
   SvgDotPatternIcon
 )`absolute top-0 right-0 transform translate-x-20 rotate-45 translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
