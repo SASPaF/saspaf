@@ -15,7 +15,7 @@ import FastIconImage from "images/fast-icon.svg";
 import ReliableIconImage from "images/reliable-icon.svg";
 import SimpleIconImage from "images/simple-icon.svg";
 
-const Container = tw.div`relative bg-primary-900 -mx-8 px-8 text-gray-100`;
+const Container = tw.div`relative bg-green-600 -mx-8 px-8 text-gray-100`;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
@@ -54,7 +54,7 @@ const Card = styled.div`
 
 export default ({
   cards = null,
-  heading = "Amazing Features",
+  heading = "Our Mission",
   subheading = "",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }) => {
