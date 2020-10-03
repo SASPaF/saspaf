@@ -20,27 +20,27 @@ class App extends Component{
                   <Home />
                 </React.Fragment>
               )} />
-              <Route exact path = "/about" render = {props => (
+              <Route path = "/about" render = {props => (
                 <React.Fragment>
                   <AboutUs />
                 </React.Fragment>
               )} />
-              <Route exact path = "/get-involved" render = {props => (
+              <Route path = "/get-involved" render = {props => (
                 <React.Fragment>
                   <GetInvolved />
                 </React.Fragment>
               )} />
-              <Route exact path = "/blog" render = {props => (
+              <Route path = "/blog" render = {props => (
                 <React.Fragment>
                   <BlogPage />
                 </React.Fragment>
               )} />
-              <Route exact path = "/our-team" render = {props => (
+              <Route path = "/our-team" render = {props => (
                 <React.Fragment>
                   <OurTeam />
                 </React.Fragment>
               )} />
-              <Route exact path = "/contact" render = {props => (
+              <Route path = "/contact" render = {props => (
                 <React.Fragment>
                   <ContactUs />
                 </React.Fragment>
