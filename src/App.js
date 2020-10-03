@@ -7,7 +7,7 @@ import AboutUs from "pages/About";
 import BlogPage from "pages/Blog";
 import OurTeam from "pages/OurTeam"
 import ContactUs from "pages/Contact";
-import{ BrowserRouter as Router, Route } from 'react-router-dom';
+import{ BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends Component{
   render() {
