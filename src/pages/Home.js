@@ -6,7 +6,7 @@ import About from "components/features/ThreeColWithSideImageWithPrimaryBackgroun
 import Upcoming from "components/cards/ThreeColSlider";
 import AnimationRevealPage from "helpers/AnimationRevealPage"
 
-function GetInvolved() {
+function Home() {
     return (
       <AnimationRevealPage disabled>
         <Hero />
@@ -18,4 +18,4 @@ function GetInvolved() {
     )
 }
   
-export default GetInvolved
+export default Home

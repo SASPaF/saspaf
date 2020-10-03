@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import "styles.css"
 import "tailwindcss/dist/base.css"
-import AnimationRevealPage from "helpers/AnimationRevealPage"
 import Home from "pages/Home"
 import GetInvolved from "pages/GetInvolved";
 import AboutUs from "pages/About";
 import BlogPage from "pages/Blog";
 import OurTeam from "pages/OurTeam"
 import ContactUs from "pages/Contact";
-import{ BrowserRouter as Router, Route } from 'react-router-dom';
+import{ HashRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component{
   render() {
@@ -21,12 +20,12 @@ class App extends Component{
                   <Home />
                 </React.Fragment>
               )} />
-              <Route path = "/about" render = {props => (
+              <Route exact path = "/about" render = {props => (
                 <React.Fragment>
                   <AboutUs />
                 </React.Fragment>
               )} />
-              <Route path = "/get-involved" render = {props => (
+              <Route exact path = "/get-involved" render = {props => (
                 <React.Fragment>
                   <GetInvolved />
                 </React.Fragment>
@@ -36,7 +35,7 @@ class App extends Component{
                   <BlogPage />
                 </React.Fragment>
               )} />
-              <Route path = "/our-team" render = {props => (
+              <Route exact path = "/our-team" render = {props => (
                 <React.Fragment>
                   <OurTeam />
                 </React.Fragment>
