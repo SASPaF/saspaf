@@ -17,13 +17,13 @@ const StyledHeader = styled(Header)`
 
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`
 const Container = styled.div`
-  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
-  background-image: url("https://images.unsplash.com/photo-1536300007881-7e482242baa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
+  ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-auto min-h-144`}
+  background-image: url("https://images.unsplash.com/photo-1473081556163-2a17de81fc97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-75`;
 
-const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex-col`;
+const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-auto flex flex-col`;
 const Content = tw.div`px-4 flex flex-1 flex-col justify-center items-center`;
 
 const Heading = styled.h1`
@@ -38,17 +38,17 @@ const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-bas
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
+      <NavLink href="/about">
         About
       </NavLink>
-      <NavLink href="#">
-        Blog
+      <NavLink href="/get-involved">
+        Get Involved
       </NavLink>
-      <NavLink href="#">
-        Locations
+      <NavLink href="/our-team">
+        Our Team
       </NavLink>
-      <NavLink href="#">
-        Pricing
+      <NavLink href="/contact-us">
+        Contact Us
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
