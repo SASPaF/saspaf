@@ -44,21 +44,21 @@ const Actions = styled.div`
 export default ({
   navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">About</NavLink>
-      <NavLink href="#">Blog</NavLink>
-      <NavLink href="#">Pricing</NavLink>
-      <NavLink href="#">Login</NavLink>
+      <NavLink href="/about">About</NavLink>
+      <NavLink href="/get-involved">Get Involved</NavLink>
+      <NavLink href="/our-team">Our Team</NavLink>
+      <NavLink href="/our-team">Contact Us</NavLink>
     </NavLinks>
   ],
   heading = (
     <>
-      Find Perfect Hotels
+      Helping single parent families
       <wbr />
       <br />
-      <span tw="text-primary-500">anywhere you go.</span>
+      <span tw="text-primary-500">one act at a time.</span>
     </>
   ),
-  description = "We've been in the hotels business across the world for 5 years now. We assure you that you will always enjoy your stay with us.",
+  description = "",
   primaryActionUrl = "#",
   primaryActionText = "Sign Up",
   secondaryActionUrl = "#",
@@ -66,24 +66,16 @@ export default ({
 }) => {
   return (
     <Container>
-      <TwoColumn>
-        <LeftColumn>
-          <StyledHeader links={navLinks} collapseBreakpointClass="sm" />
-          <Content>
-            <Heading>{heading}</Heading>
-            <Paragraph>{description}</Paragraph>
-            <Actions>
-              <a href={primaryActionUrl} className="action primaryAction">
+      <StyledHeader links={navLinks} collapseBreakpointClass="sm" />
+        <Content>
+          <Heading>{heading}</Heading>
+          <Paragraph>{description}</Paragraph>
+          <Actions>
+            <a href={primaryActionUrl} className="action primaryAction">
                 {primaryActionText}
-              </a>
-              <a href={secondaryActionUrl} className="action secondaryAction">
-                {secondaryActionText}
-              </a>
-            </Actions>
-          </Content>
-        </LeftColumn>
-        <RightColumn></RightColumn>
-      </TwoColumn>
+            </a>
+          </Actions>
+        </Content>
     </Container>
   );
 };

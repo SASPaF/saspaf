@@ -3,6 +3,10 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    fontFamily: {
+      body: ['Montserrat', 'sans-serif'],
+      display: ['Montserrat', 'sans-serif']
+    },
     screens: {
       sm: '640px',
       md: '768px',
